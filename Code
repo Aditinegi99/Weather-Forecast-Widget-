@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Widget with Autocomplete</title>
+  <title>Weather Widget</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -138,39 +138,25 @@
     </div>
   </div>
 
+  <script src="config.js"></script>
   <script>
-    const WEATHER_API_KEY = 'ae540c468dedbfb55557cd77a45c9bb5';
-    const PEXELS_API_KEY = 'Z3hvpFj2ZyemMQOSXtVfZU4O273vT6L62Y2ytSWOObJW6hF1ZbN556YI'; // Replace with your key
-
     const body = document.body;
     const cityInput = document.getElementById('cityInput');
     const suggestionsBox = document.getElementById('suggestions');
     const extras = document.getElementById('extras');
 
-    const cities = [
-      // 🇮🇳 Indian Cities
-      "Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata", "Hyderabad", "Pune", "Jaipur", "Lucknow",
-      "Chandigarh", "Indore", "Bhopal", "Goa", "Kanpur", "Patna", "Noida", "Gurgaon", "Varanasi", "Amritsar",
-
-      // 🌍 Global Cities
-      "New York", "Los Angeles", "London", "Paris", "Berlin", "Tokyo", "Dubai", "Sydney", "Singapore",
-      "Rome", "Moscow", "Toronto", "Beijing", "Seoul", "Vienna"
-    ];
+    const cities = [ "Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata", "Hyderabad", "Pune", "Jaipur", "Lucknow", "Chandigarh", "Indore", "Bhopal", "Goa", "Kanpur", "Patna", "Noida", "Gurgaon", "Varanasi", "Amritsar", "New York", "Los Angeles", "London", "Paris", "Berlin", "Tokyo", "Dubai", "Sydney", "Singapore", "Rome", "Moscow", "Toronto", "Beijing", "Seoul", "Vienna" ];
 
     cityInput.addEventListener("input", () => {
       const input = cityInput.value.toLowerCase();
       if (!input) return suggestionsBox.style.display = "none";
-
       const matched = cities.filter(city => city.toLowerCase().startsWith(input));
       showSuggestions(matched);
     });
 
     function showSuggestions(list) {
       suggestionsBox.innerHTML = "";
-      if (list.length === 0) {
-        suggestionsBox.style.display = "none";
-        return;
-      }
+      if (list.length === 0) return suggestionsBox.style.display = "none";
       list.forEach(city => {
         const div = document.createElement("div");
         div.textContent = city;

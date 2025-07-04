@@ -139,8 +139,8 @@
   </div>
 
   <script>
-    const WEATHER_API_KEY = 'ae540c468dedbfb55557cd77a45c9bb7';
-    const PEXELS_API_KEY = 'Z3hvpFj2ZyemMQOSXtVfZU4O273vT6L62Y2ytSWOObJW6hF1ZbN556Yj'; // Replace with your key
+    const WEATHER_API_KEY = 'ae540c468dedbfb55557cd77a45c9bb5';
+    const PEXELS_API_KEY = 'Z3hvpFj2ZyemMQOSXtVfZU4O273vT6L62Y2ytSWOObJW6hF1ZbN556YI'; // Replace with your key
 
     const body = document.body;
     const cityInput = document.getElementById('cityInput');

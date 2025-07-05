@@ -25,3 +25,15 @@ A responsive weather widget built with HTML, CSS, and JavaScript. Fetches live w
 - [OpenWeatherMap API](https://openweathermap.org/api)
 - [Unsplash API](https://unsplash.com/developers)
 
+**Get Your API Keys**
+
+Create accounts and generate free API keys:
+🔗 OpenWeatherMap
+🔗 Unsplash Developers
+
+**Add API Keys**
+Edit your JavaScript and replace:
+
+- const WEATHER_API_KEY = 'your_openweathermap_key';
+- const UNSPLASH_ACCESS_KEY = 'your_unsplash_key';
+

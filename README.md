@@ -28,8 +28,8 @@ A responsive weather widget built with HTML, CSS, and JavaScript. Fetches live w
 **Get Your API Keys**
 
 Create accounts and generate free API keys:
-🔗 OpenWeatherMap
-🔗 Unsplash Developers
+- 🔗 OpenWeatherMap
+- 🔗 Unsplash Developers
 
 **Add API Keys**
 Edit your JavaScript and replace:

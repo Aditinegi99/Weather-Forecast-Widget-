@@ -109,8 +109,8 @@
   </div>
 
   <script>
-    const WEATHER_API_KEY = 'your_key_here'; // OpenWeatherMap
-    const UNSPLASH_ACCESS_KEY = 'your_key_here'; // Unsplash
+    const WEATHER_API_KEY = 'ae540c468dedbfb55557cd77a45c9bb5'; // OpenWeatherMap
+    const UNSPLASH_ACCESS_KEY = 'IbizmR-TOYJC7AZ2CBTN8zjtxXMMuG4kRod08wTEqbY'; // Unsplash
 
     const body = document.body;
     const cityInput = document.getElementById('cityInput');
@@ -185,4 +185,5 @@
   </script>
 </body>
 </html>
+
 
